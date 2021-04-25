@@ -95,3 +95,30 @@
         }
     }
 }
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 297px;
+        .header {
+            flex-direction: column;
+            &__logo {
+                width: 190px;
+                margin-bottom: 12px;
+            }
+            &__official {
+                margin-bottom: 12px;
+            }
+        }
+        .promo__icons {
+            width: 295px;
+        }
+        .title {
+            font-size: 22px;
+        }
+    }
+    .consultation {
+        padding: 51px 0 92px 0;
+        .button_submit {
+            width: 219px;
+        }
+    }
+}
