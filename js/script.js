@@ -1,4 +1,4 @@
-/* $(document).ready(function(){
+$(document).ready(function(){
     $('.carousel__inner').slick({
         //dots: true,
         speed: 1200,
@@ -15,8 +15,14 @@
             }
         ]
       });
-  }); */
-const slider = tns({
+
+      $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+        $(this)
+          .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+          .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+  }); 
+/* const slider = tns({
     container: '.carousel__inner',
     items: 1,
     slideBy: 'page',
@@ -31,4 +37,4 @@ document.querySelector('.prev').addEventListener('click' , function () {
 
 document.querySelector('.next').addEventListener('click' , function () {
     slider.goTo('next');
-});
+}); */
