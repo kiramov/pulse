@@ -48,6 +48,9 @@
                 width: 90%;
             }
         }
+        .reviews__descr {
+            width: 500px;
+        }
     }
 }
 @media screen and (max-width: 767px) {
@@ -114,6 +117,16 @@
         .catalog__content_active {
             justify-content: center;
         }
+        .reviews__wrapper {
+            flex-direction: column;
+        }
+        .reviews__round {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .reviews__descr {
+            text-align: center;
+        }
     }
 }
 @media screen and (max-width: 575px) {
@@ -165,5 +178,29 @@
         .catalog__tab {
             margin-bottom: 10px;
         }
+        .reviews__descr {
+            width: 100%;
+        }
     }
+        .footer__info {
+            width: 62%;
+            height: 170px;
+            padding: 10px;
+            .footer__addr {
+                font-size: 14px;
+                margin-bottom: 16px;
+            }
+            .footer__phone {
+                font-size: 14px;
+            }
+            .footer__social {
+                margin-top: 20px;
+            }
+            .footer__social-item {
+                margin: 0 5px;
+                img {
+                    width: 35px;
+                }
+            }
+        }
 }
